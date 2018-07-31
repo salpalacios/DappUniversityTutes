@@ -4,7 +4,7 @@ contract("Dapptoken", function(accounts){
 
     it('sets the total supply on deployment',function(){
 
-        return DappToken.deployed()
+      return DappToken.deployed()
         .then(function(instance)
         { 
             tokenInstance = instance;
