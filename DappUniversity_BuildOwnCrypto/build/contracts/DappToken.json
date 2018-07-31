@@ -22,14 +22,14 @@
       "type": "constructor"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b50620f4240600081905550609e806100296000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820799ef1188dcfd5ed7d0ebc46f8d21ee69dc1ce689403111d41a313b5558b8cb70029",
-  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820799ef1188dcfd5ed7d0ebc46f8d21ee69dc1ce689403111d41a313b5558b8cb70029",
+  "bytecode": "0x608060405234801561001057600080fd5b50620f4240600081905550609e806100296000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820e8f43259b5a50ae79aa07452bda8c0f130ed38aef7c0bed86e94c94e96634f0e0029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806318160ddd146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b600054815600a165627a7a72305820e8f43259b5a50ae79aa07452bda8c0f130ed38aef7c0bed86e94c94e96634f0e0029",
   "sourceMap": "25:287:0:-;;;185:61;8:9:-1;5:2;;;30:1;27;20:12;5:2;185:61:0;231:7;217:11;:21;;;;25:287;;;;;;",
   "deployedSourceMap": "25:287:0:-;;;;;;;;;;;;;;;;;;;;;;;;152:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;152:26:0;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.2;\n\ncontract DappToken{\n    // how many tokens \n\n    // constructor\n\n    //  Public state variable gets writtent to blockchain\n    uint256 public totalSupply;\n\n    constructor()  public {\n        totalSupply = 1000000;\n\n    }\n\n    \n    // Set the tokens\n    // Rea the toal number of token\n}",
-  "sourcePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversity_BuildOwnCrypto/contracts/DappToken.sol",
+  "sourcePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversityTutes/DappUniversity_BuildOwnCrypto/contracts/DappToken.sol",
   "ast": {
-    "absolutePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversity_BuildOwnCrypto/contracts/DappToken.sol",
+    "absolutePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversityTutes/DappUniversity_BuildOwnCrypto/contracts/DappToken.sol",
     "exportedSymbols": {
       "DappToken": [
         12
@@ -182,7 +182,7 @@
     "src": "0:312:0"
   },
   "legacyAST": {
-    "absolutePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversity_BuildOwnCrypto/contracts/DappToken.sol",
+    "absolutePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversityTutes/DappUniversity_BuildOwnCrypto/contracts/DappToken.sol",
     "exportedSymbols": {
       "DappToken": [
         12
@@ -342,10 +342,10 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x553e87d8b89c26b19fd82861002aee16fb9eb070",
-      "transactionHash": "0xe0e335502b8e77661202e05feb4ca767b932e617237f9c2fc1fcd6e3035d1ae3"
+      "address": "0x6fa40c7d1d6eb653375b638ea1858056ac6d0682",
+      "transactionHash": "0x749b89caebd4bf812025878b45d8d52188fb5621a7e097c677aec98227c6804a"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-26T19:31:28.812Z"
+  "updatedAt": "2018-07-31T18:32:33.793Z"
 }
