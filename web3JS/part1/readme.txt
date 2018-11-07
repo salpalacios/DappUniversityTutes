@@ -1,4 +1,5 @@
 
+Part1
 
 Tutorial is here:
 ================
@@ -12,10 +13,11 @@ https://www.youtube.com/watch?v=t3wM5903ty0&t=1180s
 Dependancies needed  
 ---------------------------------------------------------------
 
-node and web3, the tutorial uses unfura, instead going to use private
-network in our computer
+will use node console and web3 library, the tutorial uses unfura.com, 
+instead going to use private network in our computer located 
+here (~/Library/_Ethereum-Private2)
 
-
+  >npm install web3@0.20.2 
 
 Running the node (two options):
 ---------------------------------------
