@@ -1,5 +1,6 @@
 
-
+// Examples Usin Web3 Library, launch in node console
+// 
 // Web3
 const Web3 = require('web3')
 

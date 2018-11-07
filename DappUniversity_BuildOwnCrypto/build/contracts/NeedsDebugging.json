@@ -1,0 +1,3461 @@
+{
+  "contractName": "NeedsDebugging",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "s",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "bytes"
+        }
+      ],
+      "name": "log",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "s",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "address"
+        }
+      ],
+      "name": "log",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "s",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "bytes32"
+        }
+      ],
+      "name": "log",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "s",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "int256"
+        }
+      ],
+      "name": "log",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "s",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "log",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "s",
+          "type": "string"
+        },
+        {
+          "name": "x",
+          "type": "bool"
+        }
+      ],
+      "name": "log",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogUint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "name": "LogInt",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "LogBytes",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "LogBytes32",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "LogAddress",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "name": "LogBool",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "InspectMePlease",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506108a4806100206000396000f300608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806323cdd8e814610088578063319af333146101375780633692d61a146101c05780633ca6268e14610237578063b60e72cc146102aa578063c3b556351461031d578063fe96778714610392575b600080fd5b34801561009457600080fd5b50610135600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506103a9565b005b34801561014357600080fd5b506101be600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506104b6565b005b3480156101cc57600080fd5b50610235600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803560001916906020019092919050505061058a565b005b34801561024357600080fd5b506102a8600480360381019080803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192908035906020019092919050505061063a565b005b3480156102b657600080fd5b5061031b600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001909291905050506106e2565b005b34801561032957600080fd5b50610390600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080351515906020019092919050505061078a565b005b34801561039e57600080fd5b506103a7610836565b005b7fe8407a0209fa99ec3a7228aff140c3d3e68bd279391739c7e0b65cd406cc93b58282604051808060200180602001838103835285818151815260200191508051906020019080838360005b838110156104105780820151818401526020810190506103f5565b50505050905090810190601f16801561043d5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b8381101561047657808201518184015260208101905061045b565b50505050905090810190601f1680156104a35780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a15050565b7f62ddffe5b5108385f7a590f100e1ee414ad9551a31f089e64e82998440785e1e828260405180806020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828103825284818151815260200191508051906020019080838360005b8381101561054b578082015181840152602081019050610530565b50505050905090810190601f1680156105785780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f02d93529bba9d141e5e06733c52c7e6fbcb1149586adb5c24064b522ab26f1d7828260405180806020018360001916600019168152602001828103825284818151815260200191508051906020019080838360005b838110156105fb5780820151818401526020810190506105e0565b50505050905090810190601f1680156106285780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f6a837ff3973aa4181e7b9f07756f8b7ee366dd85a36655d2cb42cd47f10b963882826040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156106a3578082015181840152602081019050610688565b50505050905090810190601f1680156106d05780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f941296a39ea107bde685522318a4b6c2b544904a5dd82a512748ca2cf839bef782826040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561074b578082015181840152602081019050610730565b50505050905090810190601f1680156107785780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f4c34c2f9a78632f29fa59aaed5514cb742fd9fbcfd7ccc2c03c85f2bbc621c478282604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156107f75780820151818401526020810190506107dc565b50505050905090810190601f1680156108245780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b6108766040805190810160405280600481526020017f6e616d650000000000000000000000000000000000000000000000000000000081525060016106e2565b5600a165627a7a72305820b5d27c3a4132867f6d9a44097ec86c1422804d6fdb6ce149fc2a8e12126b82230029",
+  "deployedBytecode": "0x608060405260043610610083576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806323cdd8e814610088578063319af333146101375780633692d61a146101c05780633ca6268e14610237578063b60e72cc146102aa578063c3b556351461031d578063fe96778714610392575b600080fd5b34801561009457600080fd5b50610135600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192905050506103a9565b005b34801561014357600080fd5b506101be600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506104b6565b005b3480156101cc57600080fd5b50610235600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803560001916906020019092919050505061058a565b005b34801561024357600080fd5b506102a8600480360381019080803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091929192908035906020019092919050505061063a565b005b3480156102b657600080fd5b5061031b600480360381019080803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001909291905050506106e2565b005b34801561032957600080fd5b50610390600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080351515906020019092919050505061078a565b005b34801561039e57600080fd5b506103a7610836565b005b7fe8407a0209fa99ec3a7228aff140c3d3e68bd279391739c7e0b65cd406cc93b58282604051808060200180602001838103835285818151815260200191508051906020019080838360005b838110156104105780820151818401526020810190506103f5565b50505050905090810190601f16801561043d5780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b8381101561047657808201518184015260208101905061045b565b50505050905090810190601f1680156104a35780820380516001836020036101000a031916815260200191505b5094505050505060405180910390a15050565b7f62ddffe5b5108385f7a590f100e1ee414ad9551a31f089e64e82998440785e1e828260405180806020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001828103825284818151815260200191508051906020019080838360005b8381101561054b578082015181840152602081019050610530565b50505050905090810190601f1680156105785780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f02d93529bba9d141e5e06733c52c7e6fbcb1149586adb5c24064b522ab26f1d7828260405180806020018360001916600019168152602001828103825284818151815260200191508051906020019080838360005b838110156105fb5780820151818401526020810190506105e0565b50505050905090810190601f1680156106285780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f6a837ff3973aa4181e7b9f07756f8b7ee366dd85a36655d2cb42cd47f10b963882826040518080602001838152602001828103825284818151815260200191508051906020019080838360005b838110156106a3578082015181840152602081019050610688565b50505050905090810190601f1680156106d05780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f941296a39ea107bde685522318a4b6c2b544904a5dd82a512748ca2cf839bef782826040518080602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561074b578082015181840152602081019050610730565b50505050905090810190601f1680156107785780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b7f4c34c2f9a78632f29fa59aaed5514cb742fd9fbcfd7ccc2c03c85f2bbc621c478282604051808060200183151515158152602001828103825284818151815260200191508051906020019080838360005b838110156107f75780820151818401526020810190506107dc565b50505050905090810190601f1680156108245780820380516001836020036101000a031916815260200191505b50935050505060405180910390a15050565b6108766040805190810160405280600481526020017f6e616d650000000000000000000000000000000000000000000000000000000081525060016106e2565b5600a165627a7a72305820b5d27c3a4132867f6d9a44097ec86c1422804d6fdb6ce149fc2a8e12126b82230029",
+  "sourceMap": "977:118:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;977:118:0;;;;;;;",
+  "deployedSourceMap": "977:118:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;537:75;;8:9:-1;5:2;;;30:1;27;20:12;5:2;537:75:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;783:79;;8:9:-1;5:2;;;30:1;27;20:12;5:2;783:79:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;661:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;661:77:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;421:71;;8:9:-1;5:2;;;30:1;27;20:12;5:2;421:71:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;307:73;;8:9:-1;5:2;;;30:1;27;20:12;5:2;307:73:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;901:72;;8:9:-1;5:2;;;30:1;27;20:12;5:2;901:72:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1023:70;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1023:70:0;;;;;;537:75;591:14;600:1;603;591:14;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;591::0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;591::0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;537:75;;:::o;783:79::-;839:16;850:1;853;839:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;839:16:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;783:79;;:::o;661:77::-;715:16;726:1;729;715:16;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;715:16:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;661:77;;:::o;421:71::-;473:12;480:1;483;473:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;473:12:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;421:71;;:::o;307:73::-;360:13;368:1;371;360:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;360:13:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;307:73;;:::o;901:72::-;953:13;961:1;964;953:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;953:13:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;901:72;;:::o;1023:70::-;1066:20;;;;;;;;;;;;;;;;;;;1083:1;1066:3;:20::i;:::-;1023:70::o",
+  "source": "pragma solidity ^0.4.10;\n\n// Enables event logging of the format `console.log('descriptive string', variable)`, \n// without having to worry about the variable type (as long as an event has been declared for that type in the \n// Console contract.\n\ncontract Console{\n    event LogUint(string, uint);\n    \n    function log(string s, uint x) public {\n        emit LogUint(s, x);\n    }\n    \n    event LogInt(string, int);\n    function log(string s, int x) public {\n        emit LogInt(s, x);\n    }\n    \n    event LogBytes(string, bytes);\n    function log(string s, bytes x) public {\n        emit LogBytes(s, x);\n    }\n    \n    event LogBytes32(string, bytes32);\n    function log(string s, bytes32 x)public{\n        emit LogBytes32(s, x);\n    }\n\n    event LogAddress(string, address);\n    function log(string s, address x) public {\n        emit LogAddress(s, x);\n    }\n\n    event LogBool(string, bool);\n    function log(string s, bool x)public {\n        emit LogBool(s, x);\n    }\n}\n\ncontract NeedsDebugging is Console {\n    \n    function InspectMePlease() public{\n        log(\"name\", uint(1));\n    }\n}",
+  "sourcePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversityTutes/DappUniversity_BuildOwnCrypto/contracts/Console.sol",
+  "ast": {
+    "absolutePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversityTutes/DappUniversity_BuildOwnCrypto/contracts/Console.sol",
+    "exportedSymbols": {
+      "Console": [
+        116
+      ],
+      "NeedsDebugging": [
+        130
+      ]
+    },
+    "id": 131,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 116,
+        "linearizedBaseContracts": [
+          116
+        ],
+        "name": "Console",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 7,
+            "name": "LogUint",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7,
+                  "src": "283:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "283:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7,
+                  "src": "291:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "291:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "282:14:0"
+            },
+            "src": "269:28:0"
+          },
+          {
+            "body": {
+              "id": 19,
+              "nodeType": "Block",
+              "src": "345:35:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 15,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "368:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 16,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "371:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 14,
+                      "name": "LogUint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "360:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 17,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "360:13:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 18,
+                  "nodeType": "EmitStatement",
+                  "src": "355:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 20,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20,
+                  "src": "320:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20,
+                  "src": "330:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "319:18:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "345:0:0"
+            },
+            "scope": 116,
+            "src": "307:73:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 26,
+            "name": "LogInt",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 25,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26,
+                  "src": "403:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 21,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "403:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 24,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26,
+                  "src": "411:3:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 23,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "411:3:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "402:13:0"
+            },
+            "src": "390:26:0"
+          },
+          {
+            "body": {
+              "id": 38,
+              "nodeType": "Block",
+              "src": "458:34:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 34,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28,
+                        "src": "480:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 35,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 30,
+                        "src": "483:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "id": 33,
+                      "name": "LogInt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26,
+                      "src": "473:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_int256_$returns$__$",
+                        "typeString": "function (string memory,int256)"
+                      }
+                    },
+                    "id": 36,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "473:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37,
+                  "nodeType": "EmitStatement",
+                  "src": "468:17:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 39,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 28,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "434:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 27,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "434:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "444:5:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 29,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "444:3:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "433:17:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 32,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "458:0:0"
+            },
+            "scope": 116,
+            "src": "421:71:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 45,
+            "name": "LogBytes",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 44,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45,
+                  "src": "517:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "517:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45,
+                  "src": "525:5:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 42,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "525:5:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "516:15:0"
+            },
+            "src": "502:30:0"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "576:36:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 53,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47,
+                        "src": "600:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 54,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "603:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "id": 52,
+                      "name": "LogBytes",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "591:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_bytes_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,bytes memory)"
+                      }
+                    },
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "591:14:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "EmitStatement",
+                  "src": "586:19:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 50,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "550:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 46,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "560:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "560:5:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:19:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 51,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "576:0:0"
+            },
+            "scope": 116,
+            "src": "537:75:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 64,
+            "name": "LogBytes32",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 64,
+                  "src": "639:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 59,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "639:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 62,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 64,
+                  "src": "647:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "647:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "638:17:0"
+            },
+            "src": "622:34:0"
+          },
+          {
+            "body": {
+              "id": 76,
+              "nodeType": "Block",
+              "src": "700:38:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 72,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 66,
+                        "src": "726:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 73,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "729:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 71,
+                      "name": "LogBytes32",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64,
+                      "src": "715:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_bytes32_$returns$__$",
+                        "typeString": "function (string memory,bytes32)"
+                      }
+                    },
+                    "id": 74,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "715:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 75,
+                  "nodeType": "EmitStatement",
+                  "src": "710:21:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 77,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 69,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 66,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77,
+                  "src": "674:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 65,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "674:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 68,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77,
+                  "src": "684:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 67,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "684:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "673:21:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "700:0:0"
+            },
+            "scope": 116,
+            "src": "661:77:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 83,
+            "name": "LogAddress",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 82,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 79,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "761:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 78,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "761:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 81,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "769:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 80,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "769:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "760:17:0"
+            },
+            "src": "744:34:0"
+          },
+          {
+            "body": {
+              "id": 95,
+              "nodeType": "Block",
+              "src": "824:38:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 91,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 85,
+                        "src": "850:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 92,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 87,
+                        "src": "853:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 90,
+                      "name": "LogAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 83,
+                      "src": "839:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_address_$returns$__$",
+                        "typeString": "function (string memory,address)"
+                      }
+                    },
+                    "id": 93,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "839:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 94,
+                  "nodeType": "EmitStatement",
+                  "src": "834:21:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 96,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 88,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 85,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "796:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 84,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "796:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 87,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "806:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 86,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "806:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "795:21:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 89,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "824:0:0"
+            },
+            "scope": 116,
+            "src": "783:79:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 102,
+            "name": "LogBool",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 98,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 102,
+                  "src": "882:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "882:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 100,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 102,
+                  "src": "890:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 99,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "890:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "881:14:0"
+            },
+            "src": "868:28:0"
+          },
+          {
+            "body": {
+              "id": 114,
+              "nodeType": "Block",
+              "src": "938:35:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 110,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 104,
+                        "src": "961:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 111,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 106,
+                        "src": "964:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 109,
+                      "name": "LogBool",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 102,
+                      "src": "953:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_bool_$returns$__$",
+                        "typeString": "function (string memory,bool)"
+                      }
+                    },
+                    "id": 112,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "953:13:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 113,
+                  "nodeType": "EmitStatement",
+                  "src": "948:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 115,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 107,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 104,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 115,
+                  "src": "914:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 103,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "914:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 106,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 115,
+                  "src": "924:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 105,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "924:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "913:18:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 108,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "938:0:0"
+            },
+            "scope": 116,
+            "src": "901:72:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 131,
+        "src": "247:728:0"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 117,
+              "name": "Console",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 116,
+              "src": "1004:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Console_$116",
+                "typeString": "contract Console"
+              }
+            },
+            "id": 118,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1004:7:0"
+          }
+        ],
+        "contractDependencies": [
+          116
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 130,
+        "linearizedBaseContracts": [
+          130,
+          116
+        ],
+        "name": "NeedsDebugging",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 128,
+              "nodeType": "Block",
+              "src": "1056:37:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6e616d65",
+                        "id": 122,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1070:6:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2361458367e696363fbcc70777d07ebbd2394e89fd0adcaf147faccd1d294d60",
+                          "typeString": "literal_string \"name\""
+                        },
+                        "value": "name"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "31",
+                            "id": 124,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1083:1:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_1_by_1",
+                              "typeString": "int_const 1"
+                            },
+                            "value": "1"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_rational_1_by_1",
+                              "typeString": "int_const 1"
+                            }
+                          ],
+                          "id": 123,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1078:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 125,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1078:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_2361458367e696363fbcc70777d07ebbd2394e89fd0adcaf147faccd1d294d60",
+                          "typeString": "literal_string \"name\""
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 121,
+                      "name": "log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        20,
+                        39,
+                        58,
+                        77,
+                        96,
+                        115
+                      ],
+                      "referencedDeclaration": 20,
+                      "src": "1066:3:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 126,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1066:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 127,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1066:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 129,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "InspectMePlease",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 119,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1047:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 120,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1056:0:0"
+            },
+            "scope": 130,
+            "src": "1023:70:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 131,
+        "src": "977:118:0"
+      }
+    ],
+    "src": "0:1095:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/salpalacios/Desktop/blockChainProject/DappUniversityTutes/DappUniversity_BuildOwnCrypto/contracts/Console.sol",
+    "exportedSymbols": {
+      "Console": [
+        116
+      ],
+      "NeedsDebugging": [
+        130
+      ]
+    },
+    "id": 131,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 116,
+        "linearizedBaseContracts": [
+          116
+        ],
+        "name": "Console",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 7,
+            "name": "LogUint",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7,
+                  "src": "283:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 2,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "283:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 7,
+                  "src": "291:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 4,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "291:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "282:14:0"
+            },
+            "src": "269:28:0"
+          },
+          {
+            "body": {
+              "id": 19,
+              "nodeType": "Block",
+              "src": "345:35:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 15,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 9,
+                        "src": "368:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 16,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "371:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 14,
+                      "name": "LogUint",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 7,
+                      "src": "360:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 17,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "360:13:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 18,
+                  "nodeType": "EmitStatement",
+                  "src": "355:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 20,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 9,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20,
+                  "src": "320:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 8,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20,
+                  "src": "330:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 10,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "319:18:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "345:0:0"
+            },
+            "scope": 116,
+            "src": "307:73:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 26,
+            "name": "LogInt",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 25,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 22,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26,
+                  "src": "403:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 21,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "403:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 24,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 26,
+                  "src": "411:3:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 23,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "411:3:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "402:13:0"
+            },
+            "src": "390:26:0"
+          },
+          {
+            "body": {
+              "id": 38,
+              "nodeType": "Block",
+              "src": "458:34:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 34,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28,
+                        "src": "480:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 35,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 30,
+                        "src": "483:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      ],
+                      "id": 33,
+                      "name": "LogInt",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 26,
+                      "src": "473:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_int256_$returns$__$",
+                        "typeString": "function (string memory,int256)"
+                      }
+                    },
+                    "id": 36,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "473:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 37,
+                  "nodeType": "EmitStatement",
+                  "src": "468:17:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 39,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 28,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "434:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 27,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "434:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 30,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "444:5:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 29,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "444:3:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "433:17:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 32,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "458:0:0"
+            },
+            "scope": 116,
+            "src": "421:71:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 45,
+            "name": "LogBytes",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 44,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 41,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45,
+                  "src": "517:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "517:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45,
+                  "src": "525:5:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 42,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "525:5:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "516:15:0"
+            },
+            "src": "502:30:0"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "576:36:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 53,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 47,
+                        "src": "600:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 54,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "603:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "id": 52,
+                      "name": "LogBytes",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45,
+                      "src": "591:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_bytes_memory_ptr_$returns$__$",
+                        "typeString": "function (string memory,bytes memory)"
+                      }
+                    },
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "591:14:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "EmitStatement",
+                  "src": "586:19:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 50,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "550:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 46,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 49,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "560:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 48,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "560:5:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "549:19:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 51,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "576:0:0"
+            },
+            "scope": 116,
+            "src": "537:75:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 64,
+            "name": "LogBytes32",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 63,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 64,
+                  "src": "639:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 59,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "639:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 62,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 64,
+                  "src": "647:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 61,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "647:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "638:17:0"
+            },
+            "src": "622:34:0"
+          },
+          {
+            "body": {
+              "id": 76,
+              "nodeType": "Block",
+              "src": "700:38:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 72,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 66,
+                        "src": "726:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 73,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 68,
+                        "src": "729:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "id": 71,
+                      "name": "LogBytes32",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 64,
+                      "src": "715:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_bytes32_$returns$__$",
+                        "typeString": "function (string memory,bytes32)"
+                      }
+                    },
+                    "id": 74,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "715:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 75,
+                  "nodeType": "EmitStatement",
+                  "src": "710:21:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 77,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 69,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 66,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77,
+                  "src": "674:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 65,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "674:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 68,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 77,
+                  "src": "684:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 67,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "684:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "673:21:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "700:0:0"
+            },
+            "scope": 116,
+            "src": "661:77:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 83,
+            "name": "LogAddress",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 82,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 79,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "761:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 78,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "761:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 81,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 83,
+                  "src": "769:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 80,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "769:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "760:17:0"
+            },
+            "src": "744:34:0"
+          },
+          {
+            "body": {
+              "id": 95,
+              "nodeType": "Block",
+              "src": "824:38:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 91,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 85,
+                        "src": "850:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 92,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 87,
+                        "src": "853:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 90,
+                      "name": "LogAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 83,
+                      "src": "839:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_address_$returns$__$",
+                        "typeString": "function (string memory,address)"
+                      }
+                    },
+                    "id": 93,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "839:16:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 94,
+                  "nodeType": "EmitStatement",
+                  "src": "834:21:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 96,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 88,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 85,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "796:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 84,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "796:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 87,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 96,
+                  "src": "806:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 86,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "806:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "795:21:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 89,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "824:0:0"
+            },
+            "scope": 116,
+            "src": "783:79:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 102,
+            "name": "LogBool",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 101,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 98,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 102,
+                  "src": "882:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 97,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "882:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 100,
+                  "indexed": false,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 102,
+                  "src": "890:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 99,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "890:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "881:14:0"
+            },
+            "src": "868:28:0"
+          },
+          {
+            "body": {
+              "id": 114,
+              "nodeType": "Block",
+              "src": "938:35:0",
+              "statements": [
+                {
+                  "eventCall": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 110,
+                        "name": "s",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 104,
+                        "src": "961:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 111,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 106,
+                        "src": "964:1:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_string_memory_ptr",
+                          "typeString": "string memory"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 109,
+                      "name": "LogBool",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 102,
+                      "src": "953:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_string_memory_ptr_$_t_bool_$returns$__$",
+                        "typeString": "function (string memory,bool)"
+                      }
+                    },
+                    "id": 112,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "953:13:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 113,
+                  "nodeType": "EmitStatement",
+                  "src": "948:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 115,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "log",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 107,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 104,
+                  "name": "s",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 115,
+                  "src": "914:8:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 103,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "914:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 106,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 115,
+                  "src": "924:6:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 105,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "924:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "913:18:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 108,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "938:0:0"
+            },
+            "scope": 116,
+            "src": "901:72:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 131,
+        "src": "247:728:0"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 117,
+              "name": "Console",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 116,
+              "src": "1004:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Console_$116",
+                "typeString": "contract Console"
+              }
+            },
+            "id": 118,
+            "nodeType": "InheritanceSpecifier",
+            "src": "1004:7:0"
+          }
+        ],
+        "contractDependencies": [
+          116
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 130,
+        "linearizedBaseContracts": [
+          130,
+          116
+        ],
+        "name": "NeedsDebugging",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 128,
+              "nodeType": "Block",
+              "src": "1056:37:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6e616d65",
+                        "id": 122,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1070:6:0",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_2361458367e696363fbcc70777d07ebbd2394e89fd0adcaf147faccd1d294d60",
+                          "typeString": "literal_string \"name\""
+                        },
+                        "value": "name"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "hexValue": "31",
+                            "id": 124,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1083:1:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_rational_1_by_1",
+                              "typeString": "int_const 1"
+                            },
+                            "value": "1"
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_rational_1_by_1",
+                              "typeString": "int_const 1"
+                            }
+                          ],
+                          "id": 123,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "1078:4:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint256_$",
+                            "typeString": "type(uint256)"
+                          },
+                          "typeName": "uint"
+                        },
+                        "id": 125,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1078:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_2361458367e696363fbcc70777d07ebbd2394e89fd0adcaf147faccd1d294d60",
+                          "typeString": "literal_string \"name\""
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 121,
+                      "name": "log",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        20,
+                        39,
+                        58,
+                        77,
+                        96,
+                        115
+                      ],
+                      "referencedDeclaration": 20,
+                      "src": "1066:3:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_uint256_$returns$__$",
+                        "typeString": "function (string memory,uint256)"
+                      }
+                    },
+                    "id": 126,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1066:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 127,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1066:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 129,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "InspectMePlease",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 119,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1047:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 120,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1056:0:0"
+            },
+            "scope": 130,
+            "src": "1023:70:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 131,
+        "src": "977:118:0"
+      }
+    ],
+    "src": "0:1095:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-14T20:33:09.587Z"
+}

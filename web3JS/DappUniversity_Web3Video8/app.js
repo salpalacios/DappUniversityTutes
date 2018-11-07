@@ -1,4 +1,6 @@
 
+// To Run code start NODE console
+// the call this app.js file
 
 // Web3
 const Web3 = require('web3')

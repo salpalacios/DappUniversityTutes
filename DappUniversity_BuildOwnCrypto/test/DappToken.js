@@ -68,7 +68,7 @@ contract("DappToken", function(accounts){
         assert.equal(adminBalance.toNumber(),InitBalance, 'it allocates the initial supply');
     })
 
-    it('it tranfers token ownership',function(){ 
+    it('Tranfers token ownership',function(){ 
         return DappToken.deployed() 
 
             .then(function(instance){ 
@@ -135,7 +135,7 @@ contract("DappToken", function(accounts){
     }) 
     
     
-    it('handles delegate token transfer',function(){
+    it('Handles delegate token transfer',function(){
         return DappToken.deployed().then(function(instance){ 
              tokenInstance   = instance;
              fromAccount     = accounts[2];
@@ -158,8 +158,7 @@ contract("DappToken", function(accounts){
         }).then(assert.fail).catch(function(error){
             assert(error.message.indexOf('revert') >= 0,"cannot transfer value larger than approve amount");
             // note this call doesnt record as an actuall transaction
-            return tokenInstance.transferFrom.call(fromAccount, toAccount, 10, {from: spendingAccount}) 
-       
+            return tokenInstance.transferFrom.call(fromAccount, toAccount, 10, {from: spendingAccount});
         }).then(function(success){
             assert.equal(success,true,"it should returns true");
             return tokenInstance.transferFrom(fromAccount, toAccount, 10, {from: spendingAccount}); 
@@ -171,8 +170,7 @@ contract("DappToken", function(accounts){
             assert.equal(EventLog.args._to,toAccount,'logs the account the tokes are authorized to');
             assert.equal(EventLog.args._value,10,'logs the transfer ammount');
             return tokenInstance.balanceOf(fromAccount);
-        }).then(function(balance){
-            
+        }).then(function(balance){ 
             assert.equal(balance.toNumber(),90, 'deducts the amount 10 to the sending account');
             return tokenInstance.balanceOf(toAccount);
         }).then(function(balance){
